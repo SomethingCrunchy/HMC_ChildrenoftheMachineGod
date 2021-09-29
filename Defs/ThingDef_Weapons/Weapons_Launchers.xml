@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- TierI RocketLauncher -->
+	<ThingDef ParentName="BaseGun_Other">
+		<defName>CotMG_For_Destroyer_TierI</defName>
+		<label>RocketLauncher</label>
+		<description>RocketLauncher TierI</description>
+		<graphicData>
+			<texPath>Things/Weapons/CotMG_For_Destroyer_TierI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPrecision</soundInteract>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<SightsEfficiency>1.7</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>2.1</SwayFactor>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+			<Bulk>12.00</Bulk>
+			<Mass>50.50</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>True</destroyOnDrop>
+		<!-- <menuHidden>true</menuHidden> -->
+		<weaponTags>
+			<li>CotMG_For_Destroyer_TierI</li>
+			<li>CE_AI_Launcher</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Futuristic</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RoMG_R_Plasma</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>1.1</circularError>
+				<warmupTime>2.3</warmupTime>
+				<range>72</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>4.5</reloadTime>
+				<ammoSet>AmmoSet_RoMG_R</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- TierII Cannon -->
+	<ThingDef ParentName="BaseGun_Other">
+		<defName>CotMG_For_Destroyer_TierII</defName>
+		<label>Cannon</label>
+		<description>Cannon TierII</description>
+		<graphicData>
+			<texPath>Things/Weapons/CotMG_For_Destroyer_TierI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPrecision</soundInteract>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<SightsEfficiency>2.15</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>0.55</SwayFactor>
+			<RangedWeapon_Cooldown>4.1</RangedWeapon_Cooldown>
+			<Bulk>12.00</Bulk>
+			<Mass>78.50</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>True</destroyOnDrop>
+		<!-- <menuHidden>true</menuHidden> -->
+		<weaponTags>
+			<li>CotMG_For_Destroyer_TierII</li>
+			<li>CE_AI_Launcher</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Futuristic</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RoMG_A_Plasma</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>1.2</circularError>
+				<warmupTime>3.3</warmupTime>
+				<range>78</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>120mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>6.5</reloadTime>
+				<ammoSet>AmmoSet_RoMG_A</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- TierIII RocketLauncher -->
+	<ThingDef ParentName="BaseGun_Other">
+		<defName>CotMG_For_Destroyer_TierIII</defName>
+		<label>RocketLauncher</label>
+		<description>RocketLauncher TierIII</description>
+		<graphicData>
+			<texPath>Things/Weapons/CotMG_For_Destroyer_TierI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPrecision</soundInteract>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<SightsEfficiency>1.15</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>0.75</SwayFactor>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+			<Bulk>92.00</Bulk>
+			<Mass>165.50</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>True</destroyOnDrop>
+		<!-- <menuHidden>true</menuHidden> -->
+		<weaponTags>
+			<li>CotMG_For_Destroyer_TierIII</li>
+			<li>CE_AI_Launcher</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Futuristic</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RoMG_R_Plasma</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>1.2</circularError>
+				<warmupTime>5.3</warmupTime>
+				<range>72</range>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>130mmRocket</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>4</magazineSize>
+				<reloadTime>8.5</reloadTime>
+				<ammoSet>AmmoSet_RoMG_R</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- TierIII Grenade Launcher -->
+	<ThingDef ParentName="BaseGun_Other">
+		<defName>CotMG_For_Grenadier_TierIII</defName>
+		<label>Grenade Launcher</label>
+		<description>Grenade Launcher TierIII</description>
+		<graphicData>
+			<texPath>Things/Weapons/CotMG_For_Destroyer_TierI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPrecision</soundInteract>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.12</ShotSpread>
+			<SwayFactor>1.55</SwayFactor>
+			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+			<Bulk>92.00</Bulk>
+			<Mass>75.50</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>True</destroyOnDrop>
+		<!-- <menuHidden>true</menuHidden> -->
+		<weaponTags>
+			<li>CotMG_For_Grenadier_TierIII</li>
+			<li>CE_AI_Launcher</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Futuristic</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RoMG_G_Plasma</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<minRange>4</minRange>
+				<noiseRadius>5</noiseRadius>
+				<circularError>0.65</circularError>
+				<warmupTime>1.2</warmupTime>
+				<range>55</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<soundCast>RF_ShotMilkorMGL</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>15</magazineSize>
+				<reloadTime>4.5</reloadTime>
+				<ammoSet>AmmoSet_RoMG_G</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

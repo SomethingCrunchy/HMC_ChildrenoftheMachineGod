@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RoMG_PlasmaFlame</defName>
+		<label>Plasma Flame</label>
+		<labelShort>PF</labelShort>
+		<description>The charged particle coating disrupts armor and tissue in equal measure.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RoMG_Plasma</defName>
+		<label>Plasma</label>
+		<labelShort>Pl</labelShort>
+		<description>The charged particle coating disrupts armor and tissue in equal measure.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RoMG_Laser</defName>
+		<label>laser beam</label>
+		<labelShort>LB</labelShort>
+		<description>Stable laser beam without igniting objects.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+</Defs>

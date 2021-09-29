@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoRoMG_R</defName>
+		<label>RoMG-R Rocket</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>Icons/UI/ThingCategories/CaliberRoMG-R</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_RoMG_R</defName>
+		<label>RoMG-R Rocket</label>
+		<ammoTypes>
+			<Ammo_RoMG_R_Plasma>Bullet_RoMG_R_Plasma</Ammo_RoMG_R_Plasma>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="RoMG_R_Base" ParentName="AmmoBase" Abstract="True">
+		<description>Large container for rocket launckers.</description>
+		<statBases>
+			<Mass>2.0</Mass>
+			<Bulk>5</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>AmmoRoMG_R</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="RoMG_R_Base">
+		<defName>Ammo_RoMG_R_Plasma</defName>
+		<label>RoMG-R (Plasma)</label>
+		<graphicData>
+			<texPath>Things/Ammo/RoMG-R/Plasma</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>49</MarketValue>
+		</statBases>
+		<ammoClass>RoMG_PlasmaFlame</ammoClass>
+		<detonateProjectile>Bullet_RoMG_R_Plasma</detonateProjectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>5</explosiveRadius>
+				<explosiveDamageType>Plasma</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.15</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.33</startWickHitPointsPercent>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explodeOnKilled>True</explodeOnKilled>
+				<wickTicks>60~300</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SK_BaseBullet">
+		<defName>Bullet_RoMG_R_Plasma</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>RoMG-R (Plasma)</label>
+		<graphicData>
+			<texPath>Things/Projectile/InfernoCannonShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CotMG_Fear_PlasmaFlame</damageDef>
+			<damageAmountBase>150</damageAmountBase>
+			<speed>90</speed>
+			<flyOverhead>false</flyOverhead>
+			<explosionRadius>6</explosionRadius>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+</Defs>

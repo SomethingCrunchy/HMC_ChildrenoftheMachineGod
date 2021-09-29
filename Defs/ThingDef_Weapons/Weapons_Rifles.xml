@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- TierII Rifle -->
+	<ThingDef ParentName="BaseGun_Other">
+		<defName>CotMG_For_Gunner_TierII</defName>
+		<label>AutoRifle</label>
+		<description>AutoRifle TierII</description>
+		<graphicData>
+			<texPath>Things/Weapons/CotMG_For_Gunner_TierII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPrecision</soundInteract>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<SightsEfficiency>1.15</SightsEfficiency>
+			<ShotSpread>0.03</ShotSpread>
+			<SwayFactor>1.4</SwayFactor>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+			<Bulk>12.00</Bulk>
+			<Mass>45.50</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>True</destroyOnDrop>
+		<!-- <menuHidden>true</menuHidden> -->
+		<weaponTags>
+			<li>CotMG_For_Gunner_TierII</li>
+			<li>CE_AI_Rifle</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Futuristic</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.02</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RoMG_L_Burn</defaultProjectile>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTime>0.75</warmupTime>
+				<range>52</range>
+				<burstShotCount>8</burstShotCount>
+				<soundCast>ShotLaser</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>40</magazineSize>
+				<reloadTime>2.1</reloadTime>
+				<ammoSet>AmmoSet_RoMG_L</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- TierII Sniper -->
+	<ThingDef ParentName="BaseGun_Other">
+		<defName>CotMG_For_Sniper_TierII</defName>
+		<label>Sniper Rifle</label>
+		<description>Sniper Rifle TierII</description>
+		<graphicData>
+			<texPath>Things/Weapons/CotMG_For_Sniper_TierII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPrecision</soundInteract>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<SightsEfficiency>2.15</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>0.55</SwayFactor>
+			<RangedWeapon_Cooldown>4.1</RangedWeapon_Cooldown>
+			<Bulk>12.00</Bulk>
+			<Mass>65.50</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>True</destroyOnDrop>
+		<!-- <menuHidden>true</menuHidden> -->
+		<weaponTags>
+			<li>CotMG_For_Sniper_TierII</li>
+			<li>CE_AI_Rifle</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Futuristic</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.05</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RoMG_SL_Burn</defaultProjectile>
+				<warmupTime>2.3</warmupTime>
+				<range>78</range>
+				<soundCast>ShotLaser</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>7</magazineSize>
+				<reloadTime>4.5</reloadTime>
+				<ammoSet>AmmoSet_RoMG_SL</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

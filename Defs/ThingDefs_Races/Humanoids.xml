@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- CotMG_Melee_TierII -->
+	<ThingDef ParentName="CotMG_MechanoidThingBase">
+		<defName>CotMG_Melee_TierII</defName>
+		<label>Ba-Pef</label>
+		<description>Ba-Pef</description>
+		<statBases>
+			<Mass>180</Mass>
+			<MoveSpeed>10.2</MoveSpeed>
+			<ArmorRating_Blunt>45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>20</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>
+			<CarryWeight>90</CarryWeight>
+			<CarryBulk>60</CarryBulk>
+			<MaxHitPoints>400</MaxHitPoints>
+			<AimingAccuracy>0.35</AimingAccuracy>
+			<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.6</MeleeDodgeChance>
+			<MeleeCritChance>0.7</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>CotMG_Scratch</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>0.3</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>15</armorPenetrationSharp>
+				<armorPenetrationBlunt>18</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>CotMG_Scratch</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>0.3</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>15</armorPenetrationSharp>
+				<armorPenetrationBlunt>18</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>3.85</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Lancer</body>
+			<baseBodySize>1.1</baseBodySize>
+			<baseHealthScale>2.7</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>1000</min>
+				<max>2000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<TitaniumBar>4</TitaniumBar>
+			<DepletedUranium>5</DepletedUranium>
+			<CarbonAlloy>3</CarbonAlloy>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- CotMG_Melee_TierIII -->
+	<ThingDef ParentName="CotMG_MechanoidThingBase">
+		<defName>CotMG_Melee_TierIII</defName>
+		<label>Babi</label>
+		<description>Babi</description>
+		<statBases>
+			<Mass>230</Mass>
+			<MoveSpeed>8.3</MoveSpeed>
+			<ArmorRating_Blunt>64</ArmorRating_Blunt>
+			<ArmorRating_Sharp>24</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>
+			<CarryWeight>115</CarryWeight>
+			<CarryBulk>75</CarryBulk>
+			<MaxHitPoints>500</MaxHitPoints>
+			<AimingAccuracy>0.35</AimingAccuracy>
+			<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeCritChance>0.3</MeleeCritChance>
+			<MeleeParryChance>0.7</MeleeParryChance>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>CotMG_Blunt</li>
+				</capacities>
+				<power>120</power>
+				<cooldownTime>3.4</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>55</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>CotMG_Blunt</li>
+				</capacities>
+				<power>120</power>
+				<cooldownTime>5.4</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>55</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>34</power>
+				<cooldownTime>6.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>48</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Lancer</body>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>5.1</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>1000</min>
+				<max>2000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<TitaniumBar>4</TitaniumBar>
+			<DepletedUranium>5</DepletedUranium>
+			<CarbonAlloy>3</CarbonAlloy>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- CotMG_Gunner_TierII -->
+	<ThingDef ParentName="CotMG_MechanoidThingBase">
+		<defName>CotMG_Gunner_TierII</defName>
+		<label>Amset</label>
+		<description>Amset</description>
+		<statBases>
+			<Mass>240</Mass>
+			<MoveSpeed>7.6</MoveSpeed>
+			<ArmorRating_Blunt>45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>20</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>
+			<CarryWeight>180</CarryWeight>
+			<CarryBulk>135</CarryBulk>
+			<MaxHitPoints>320</MaxHitPoints>
+			<AimingAccuracy>1.0</AimingAccuracy>
+			<ShootingAccuracyPawn>3.1</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.8</AimingDelayFactor>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>10</armorPenetrationSharp>
+				<armorPenetrationBlunt>10</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>10</armorPenetrationSharp>
+				<armorPenetrationBlunt>10</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3.85</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Lancer</body>
+			<baseBodySize>1.1</baseBodySize>
+			<baseHealthScale>3.3</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>1000</min>
+				<max>2000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<TitaniumBar>4</TitaniumBar>
+			<DepletedUranium>5</DepletedUranium>
+			<CarbonAlloy>3</CarbonAlloy>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- CotMG_Gunner_TierIII -->
+	<ThingDef ParentName="CotMG_MechanoidThingBase">
+		<defName>CotMG_Gunner_TierIII</defName>
+		<label>Kem-Ur</label>
+		<description>Kem-Ur</description>
+		<statBases>
+			<Mass>310</Mass>
+			<MoveSpeed>5.2</MoveSpeed>
+			<ArmorRating_Blunt>64</ArmorRating_Blunt>
+			<ArmorRating_Sharp>24</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>
+			<CarryWeight>235</CarryWeight>
+			<CarryBulk>180</CarryBulk>
+			<MaxHitPoints>450</MaxHitPoints>
+			<AimingAccuracy>1.0</AimingAccuracy>
+			<ShootingAccuracyPawn>3.1</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.8</AimingDelayFactor>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>0.6</MeleeParryChance>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>10</armorPenetrationSharp>
+				<armorPenetrationBlunt>10</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>10</armorPenetrationSharp>
+				<armorPenetrationBlunt>10</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3.85</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Lancer</body>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>4.5</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>1000</min>
+				<max>2000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<TitaniumBar>4</TitaniumBar>
+			<DepletedUranium>5</DepletedUranium>
+			<CarbonAlloy>3</CarbonAlloy>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

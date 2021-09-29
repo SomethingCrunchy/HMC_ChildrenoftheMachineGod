@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="CotMG_MechanoidThingBase" ParentName="SK_MechanoidThingBase" Abstract="True">
+		<thingClass>Pawn</thingClass>
+		<category>Pawn</category>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<hasTooltip>true</hasTooltip>
+		<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+		<inspectorTabs>
+			<li>ITab_Pawn_Health</li>
+			<li>ITab_Pawn_Needs</li>
+			<li>ITab_Pawn_Character</li>
+			<li>ITab_Pawn_Training</li>
+			<li>ITab_Pawn_Social</li>
+			<li>ITab_Pawn_Guest</li>
+			<li>ITab_Pawn_Prisoner</li>
+			<li>ITab_Pawn_FormingCaravan</li>
+			<li>CombatExtended.ITab_Inventory</li>
+			<li>ITab_Pawn_Log</li>
+		</inspectorTabs>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<Mass>70</Mass>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<Flammability>0</Flammability>
+			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
+			<ComfyTemperatureMax>600</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+			<SmokeSensitivity>0</SmokeSensitivity>
+			<CotMG_Fearless>0</CotMG_Fearless>
+			<ArmorRating_Heat>3.00</ArmorRating_Heat>
+			<GermResistance>1.0</GermResistance>
+			<GermContainment>1.0</GermContainment>
+			<NightVisionEfficiency>0.92</NightVisionEfficiency>
+		</statBases>
+		<receivesSignals>true</receivesSignals>
+		<race>
+			<fleshType>Mechanoid</fleshType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>None</foodType>
+			<lifeExpectancy>300</lifeExpectancy>
+			<hediffGiverSets>
+				<li>MechanoidStandard</li>
+			</hediffGiverSets>
+			<bloodDef>Filth_MachineBits</bloodDef>
+		</race>
+		<comps>
+			<li>
+				<compClass>CompAttachBase</compClass>
+			</li>
+			<li>
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+			<li>
+				<compClass>CombatExtended.CompInventory</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

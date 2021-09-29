@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- TierI Shotgun -->
+    <ThingDef ParentName="BaseGun_Other">
+        <defName>CotMG_For_Gunner_TierI</defName>
+        <label>Shotgun</label>
+        <description>Shotgun TierI</description>
+        <graphicData>
+            <texPath>Things/Weapons/CotMG_For_Gunner_TierI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPrecision</soundInteract>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <MarketValue>10000</MarketValue>
+            <SightsEfficiency>0.85</SightsEfficiency>
+            <ShotSpread>0.45</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
+            <Bulk>12.00</Bulk>
+            <Mass>45.50</Mass>
+        </statBases>
+        <tradeability>None</tradeability>
+        <techLevel>Spacer</techLevel>
+        <destroyOnDrop>True</destroyOnDrop>
+        <!-- <menuHidden>true</menuHidden> -->
+        <weaponTags>
+            <li>CotMG_For_Gunner_TierI</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+                <recoilAmount>1.2</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_RoMG_SG_Plasma</defaultProjectile>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <warmupTime>0.4</warmupTime>
+                <range>15</range>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>ShotM300Claymore</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>Snapshot</aiAimMode>
+				<noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>8</magazineSize>
+                <reloadTime>2.4</reloadTime>
+                <ammoSet>AmmoSet_RoMG_SG</ammoSet>
+            </li>
+        </comps>
+    </ThingDef> 
+	
+</Defs>

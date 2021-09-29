@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Letters -->
+  <CotMG_WarningLabel>A strange ship is spotted</CotMG_WarningLabel>
+  <CotMG_WarningText>Suddenly something covered the sun. A huge spaceship came into view and swept over you, dropping something nearby. The few seconds that it was visible were enough for you to remember what it was. Destroyers of worlds, devourers of planets, machines that bring death and destruction. Even the legendary Mechanoids didn't risk crossing paths with them. Sweat covered your face and your hands trembled.\nIs it over?</CotMG_WarningText>
+
+	<!-- RU Внезапно что-то закрыло солнце. Вашему виду открылся огромный космический корабль, который пронесся над вами, сбросив что-то неподалеку. Несколько секунд, что он был виден, было достаточно для того, чтоб вы вспомнили, что это такое. Уничтожители миров, пожиратели планет, механизмы, что несут смерть и разрушения. Даже легендарные Механоиды не рисковали пересекаться с ними. Испарина покрыла ваше лицу и руки задрожали. \nЭто конец?  -->
+</LanguageData>

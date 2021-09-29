@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName="SkynetInfiltrator"]/statBases/Flammability</xpath>
+		<value>
+			<CotMG_Fearless>0</CotMG_Fearless>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName="SkynetAgent"]/statBases/Flammability</xpath>
+		<value>
+			<CotMG_Fearless>0</CotMG_Fearless>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName="SkynetPrototypeTX"]/statBases/MoveSpeed</xpath>
+		<value>
+			<CotMG_Fearless>0</CotMG_Fearless>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName="SkynetCovert"]/statBases/MoveSpeed</xpath>
+		<value>
+			<CotMG_Fearless>0</CotMG_Fearless>
+		</value>
+	</Operation>
+	
+</Patch>

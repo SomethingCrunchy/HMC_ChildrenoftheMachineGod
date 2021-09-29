@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoRoMG_SL</defName>
+		<label>AmmoRoMG_SL Sniper Laser</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>Icons/UI/ThingCategories/CaliberRoMG-SL</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_RoMG_SL</defName>
+		<label>AmmoRoMG_SL Sniper Laser</label>
+		<ammoTypes>
+			<Ammo_RoMG_SL_Burn>Bullet_RoMG_SL_Burn</Ammo_RoMG_SL_Burn>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_RoMG_SL_Burn</defName>
+		<label>AmmoRoMG_SL Sniper (LaserBurn)</label>
+		<tradeTags>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoRoMG_SL</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Ammo/RoMG-SL/LaserBurn</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>0.01</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<ammoClass>RoMG_Laser</ammoClass>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletPurple">
+		<defName>Bullet_RoMG_SL_Burn</defName>
+		<label>Laser beam</label>
+		<graphicData>
+			<texPath>Things/Ammo/Projectile/RoMG_L_LaserBurn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CotMG_Fear_LaserBurn</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>2</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+</Defs>

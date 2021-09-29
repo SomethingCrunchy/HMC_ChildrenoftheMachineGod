@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="SK_FactionBase">
+		<defName>ChildrenOfTheMachineGod</defName>
+		<label>Childrens Of The Machine God hive</label>
+		<description>A hive of machines.</description>
+		<pawnSingular>Child</pawnSingular>
+		<pawnsPlural>Children</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<factionNameMaker>NamerFactionMechanoid</factionNameMaker>
+		<factionIconPath>Icons/Faction/ChildrenOfTheMachineGod</factionIconPath>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(500, 0)</li>
+				<li>(10000, 0)</li>
+				<li>(21000, 0.3)</li>
+				<li>(25000, 0.5)</li>
+				<li>(25000, 0.7)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(19000, 925)</li>
+				<li>(21000, 1325)</li>
+				<li>(25000, 1725)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<raidLootMaker>CotMG_RaidLootMaker</raidLootMaker>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canSiege>false</canSiege>
+		<canUseAvoidGrid>true</canUseAvoidGrid>
+		<techLevel>Archotech</techLevel>
+		<earliestRaidDays>330</earliestRaidDays>
+		<permanentEnemy>true</permanentEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>80</configurationListOrderPriority>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<CotMG_Gunner_TierI>80</CotMG_Gunner_TierI>
+					<CotMG_Melee_TierI>60</CotMG_Melee_TierI>
+					<CotMG_Destroyer_TierI>40</CotMG_Destroyer_TierI>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<CotMG_Melee_TierI>80</CotMG_Melee_TierI>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<CotMG_Gunner_TierII>80</CotMG_Gunner_TierII>
+					<CotMG_Melee_TierII>60</CotMG_Melee_TierII>
+					<CotMG_Sniper_TierII>40</CotMG_Sniper_TierII>
+					<CotMG_Destroyer_TierII>40</CotMG_Destroyer_TierII>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<CotMG_Melee_TierII>80</CotMG_Melee_TierII>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<CotMG_Gunner_TierIII>80</CotMG_Gunner_TierIII>
+					<CotMG_Melee_TierIII>60</CotMG_Melee_TierIII>
+					<CotMG_Destroyer_TierIII>40</CotMG_Destroyer_TierIII>
+					<CotMG_Grenadier_TierIII>40</CotMG_Grenadier_TierIII>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<CotMG_Melee_TierIII>80</CotMG_Melee_TierIII>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-273~600</allowedArrivalTemperatureRange>
+	</FactionDef>
+
+	<ThingSetMakerDef>
+		<defName>CotMG_RaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>MagneticMaterial</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+
+</Defs>

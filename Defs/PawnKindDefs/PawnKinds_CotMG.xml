@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ============ ChildrenOfTheMachineGod Bases ========= -->
+	<PawnKindDef Name="CotMG_BaseKind" Abstract="True">
+		<defaultFactionType>ChildrenOfTheMachineGod</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<destroyGearOnDrop>true</destroyGearOnDrop>
+	</PawnKindDef>
+
+	<!-- === Melee === -->
+	
+				<!-- CotMG_Melee_TierI -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Melee_TierI</defName>
+		<label>Am-hehu</label>
+		<race>CotMG_Melee_TierI</race>
+		<combatPower>900</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Quadruped/CotMG_Melee_TierI</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+				<!-- CotMG_Melee_TierII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Melee_TierII</defName>
+		<label>Ba-Pef</label>
+		<race>CotMG_Melee_TierII</race>
+		<combatPower>1300</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Humanoids/CotMG_Melee_TierII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+				<!--CotMG_Melee_TierIII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Melee_TierIII</defName>
+		<label>Babi</label>
+		<race>CotMG_Melee_TierIII</race>
+		<combatPower>1700</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Humanoids/CotMG_Melee_TierIII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- === Gunners === -->
+	
+				<!-- CotMG_Gunner_TierI -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Gunner_TierI</defName>
+		<label>Up-uatu</label>
+		<race>CotMG_Gunner_TierI</race>
+		<combatPower>900</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Quadruped/CotMG_Gunner_TierI</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Gunner_TierI</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>8</min>
+					<max>10</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- CotMG_Gunner_TierII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Gunner_TierII</defName>
+		<label>Amset</label>
+		<race>CotMG_Gunner_TierII</race>
+		<combatPower>1300</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Humanoids/CotMG_Gunner_TierII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Gunner_TierII</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>8</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+				<!-- CotMG_Sniper_TierII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Sniper_TierII</defName>
+		<label>Seker</label>
+		<race>CotMG_Sniper_TierII</race>
+		<combatPower>1300</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Quadruped/CotMG_Gunner_TierI</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Sniper_TierII</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>6</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+				<!-- CotMG_Gunner_TierIII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Gunner_TierIII</defName>
+		<label>Kem-Ur</label>
+		<race>CotMG_Gunner_TierIII</race>
+		<combatPower>1700</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Humanoids/CotMG_Gunner_TierII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Gunner_TierIII</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- === Destroyers === -->
+
+	<!-- CotMG_Destroyer_TierI -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Destroyer_TierI</defName>
+		<label>Duamutef</label>
+		<race>CotMG_Destroyer_TierI</race>
+		<combatPower>900</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Humanoids/CotMG_Gunner_TierII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Destroyer_TierI</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>8</min>
+					<max>9</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- CotMG_Destroyer_TierII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Destroyer_TierII</defName>
+		<label>Aker</label>
+		<race>CotMG_Destroyer_TierII</race>
+		<combatPower>1300</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/QuadrupedWhithArms/CotMG_Destroyer_TierII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Destroyer_TierII</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>12</min>
+					<max>14</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- CotMG_Destroyer_TierIII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Destroyer_TierIII</defName>
+		<label>Anubis</label>
+		<race>CotMG_Destroyer_TierIII</race>
+		<combatPower>1700</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/QuadrupedWhithArms/CotMG_Destroyer_TierII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Destroyer_TierIII</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>8</min>
+					<max>10</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- CotMG_Grenadier_TierIII -->
+	<PawnKindDef ParentName="CotMG_BaseKind">
+		<defName>CotMG_Grenadier_TierIII</defName>
+		<label>Meretseger</label>
+		<race>CotMG_Grenadier_TierIII</race>
+		<combatPower>1700</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/SegmentedBodies/CotMG_Grenadier_TierIII</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CotMG_For_Grenadier_TierIII</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>8</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+</Defs>

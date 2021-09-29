@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef Name="CotMG_Fear_Plasma_Base" ParentName="LocalInjuryBase">
+		<defName>CotMG_Fear_Plasma</defName>
+		<label>Plasma</label>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been melted.</deathMessage>
+		<hediff>Burn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<defaultDamage>3</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<buildingDamageFactor>4.5</buildingDamageFactor>
+		<explosionHeatEnergyPerCell>3</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastPlasma</explosionCellFleck>
+		<soundExplosion>Explosion_PlasmaEXP</soundExplosion>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<additionalHediffs>
+			<li>
+				<hediff>CotMG_Fear</hediff>
+				<severityPerDamageDealt>0.7</severityPerDamageDealt>
+				<victimSeverityScaling>CotMG_Fearless</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="CotMG_Fear_Plasma_Base">
+		<defName>CotMG_Fear_PlasmaFlame</defName>
+		<workerClass>DamageWorker_Flame</workerClass>
+	</DamageDef>
+
+	<DamageDef ParentName="LocalInjuryBase">
+		<defName>CotMG_Fear_LaserBurn</defName>
+		<workerClass>DamageWorker_Flame</workerClass>
+		<label>Laser-burn</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<explosionCellFleck>SmokeRed</explosionCellFleck>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<additionalHediffs>
+			<li>
+				<hediff>CotMG_Fear</hediff>
+				<severityPerDamageDealt>0.7</severityPerDamageDealt>
+				<victimSeverityScaling>CotMG_Fearless</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<!-- Melee Bite -->
+	
+    <ToolCapacityDef>
+        <defName>CotMG_Bite</defName>
+    </ToolCapacityDef>
+
+    <DamageDef ParentName="Bite">
+        <defName>CotMG_Bite</defName>
+        <label>bite</label>
+        <additionalHediffs>
+            <li>
+                <hediff>CotMG_Fear</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+				<victimSeverityScaling>CotMG_Fearless</victimSeverityScaling>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+
+    <ManeuverDef>
+        <defName>CotMG_Bite</defName>
+        <requiredCapacity>CotMG_Bite</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>CotMG_Bite</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+	<!-- Melee Scratch -->
+
+    <ToolCapacityDef>
+        <defName>CotMG_Scratch</defName>
+    </ToolCapacityDef>
+
+    <DamageDef ParentName="Scratch">
+        <defName>CotMG_Scratch</defName>
+        <label>Scratch</label>
+        <additionalHediffs>
+            <li>
+                <hediff>CotMG_Fear</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+				<victimSeverityScaling>CotMG_Fearless</victimSeverityScaling>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+
+    <ManeuverDef>
+        <defName>CotMG_Scratch</defName>
+        <requiredCapacity>CotMG_Scratch</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>CotMG_Scratch</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Scratch_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Scratch_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Scratch_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Scratch_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+	<!-- Melee Crush -->
+
+    <ToolCapacityDef>
+        <defName>CotMG_Blunt</defName>
+    </ToolCapacityDef>
+
+    <DamageDef ParentName="BluntBase">
+        <defName>CotMG_Blunt</defName>
+        <label>Blunt</label>
+        <additionalHediffs>
+            <li>
+                <hediff>CotMG_Fear</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+				<victimSeverityScaling>CotMG_Fearless</victimSeverityScaling>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+
+    <ManeuverDef>
+        <defName>CotMG_Blunt</defName>
+        <requiredCapacity>CotMG_Blunt</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>CotMG_Blunt</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+</Defs>

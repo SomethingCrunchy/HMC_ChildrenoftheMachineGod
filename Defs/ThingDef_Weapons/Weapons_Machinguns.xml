@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- TierIII MachinGun -->
+	<ThingDef ParentName="BaseGun_Other">
+		<defName>CotMG_For_Gunner_TierIII</defName>
+		<label>MachinGun</label>
+		<description>MachinGun TierIII</description>
+		<graphicData>
+			<texPath>Things/Weapons/CotMG_For_Gunner_TierIII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPrecision</soundInteract>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<SightsEfficiency>1.15</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>0.75</SwayFactor>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+			<Bulk>12.00</Bulk>
+			<Mass>85.50</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>True</destroyOnDrop>
+		<!-- <menuHidden>true</menuHidden> -->
+		<weaponTags>
+			<li>CotMG_For_Gunner_TierIII</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Futuristic</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.03</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RoMG_HL_Burn</defaultProjectile>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<warmupTime>1.65</warmupTime>
+				<range>60</range>
+				<burstShotCount>20</burstShotCount>
+				<soundCast>ShotLaser</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>200</magazineSize>
+				<reloadTime>5.7</reloadTime>
+				<ammoSet>AmmoSet_RoMG_HL</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

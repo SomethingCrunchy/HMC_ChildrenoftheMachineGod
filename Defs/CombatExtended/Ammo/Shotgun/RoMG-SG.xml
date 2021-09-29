@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoRoMG_SG</defName>
+		<label>RoMG_SG pellet shot</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>Icons/UI/ThingCategories/CaliberRoMG-SG</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_RoMG_SG</defName>
+		<label>RoMG_SG pellet shot</label>
+		<ammoTypes>
+			<Ammo_RoMG_SG_Plasma>Bullet_RoMG_SG_Plasma</Ammo_RoMG_SG_Plasma>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Bullet_RoMG_SG_Base" ParentName="SpacerSmallAmmoBase" Abstract="True">
+		<description>Shotgun caliber</description>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Bulk>0.15</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>AmmoRoMG_SG</li>
+		</thingCategories>
+		<tradeTags>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<stackLimit>200</stackLimit>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Bullet_RoMG_SG_Base">
+		<defName>Ammo_RoMG_SG_Plasma</defName>
+		<label>RoMG-SG (Plasma)</label>
+		<graphicData>
+			<texPath>Things/Ammo/RoMG-SG/Plasma</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>49</MarketValue>
+		</statBases>
+		<ammoClass>RoMG_Plasma</ammoClass>
+		<detonateProjectile>Bullet_RoMG_SG_Plasma</detonateProjectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>5</explosiveRadius>
+				<explosiveDamageType>Plasma</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.15</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.33</startWickHitPointsPercent>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explodeOnKilled>True</explodeOnKilled>
+				<wickTicks>60~300</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SK_BaseBullet">
+		<defName>Bullet_RoMG_SG_Plasma</defName>
+		<label>RoMG-SG (Plasma)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Projectile/RoMG_SG_Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CotMG_Fear_Plasma</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<pelletCount>6</pelletCount>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>6</armorPenetrationBlunt>
+			<spreadMult>10</spreadMult>
+			<speed>150</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+</Defs>
