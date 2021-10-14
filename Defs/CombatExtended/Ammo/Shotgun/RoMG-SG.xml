@@ -32,6 +32,8 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade_Sellable</li>
 		</tradeTags>
+		<thingSetMakerTags Inherit="false">
+		</thingSetMakerTags>
 		<stackLimit>200</stackLimit>
 	</ThingDef>
 	

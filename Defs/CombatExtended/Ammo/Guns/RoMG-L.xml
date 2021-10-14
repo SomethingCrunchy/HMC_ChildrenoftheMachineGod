@@ -26,6 +26,8 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade_Sellable</li>
 		</tradeTags>
+		<thingSetMakerTags Inherit="false">
+		</thingSetMakerTags>
 		<thingCategories>
 			<li>AmmoRoMG_L</li>
 		</thingCategories>

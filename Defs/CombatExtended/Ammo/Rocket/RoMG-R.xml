@@ -30,6 +30,8 @@
 			<li>AmmoRoMG_R</li>
 		</thingCategories>
 		<stackLimit>25</stackLimit>
+		<thingSetMakerTags Inherit="false">
+		</thingSetMakerTags>
 		<tradeTags>
 			<li>CE_AutoEnableTrade_Sellable</li>
 		</tradeTags>
