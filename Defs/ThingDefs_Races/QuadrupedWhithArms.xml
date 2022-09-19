@@ -84,9 +84,7 @@
 			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-			<TitaniumBar>4</TitaniumBar>
-			<DepletedUranium>5</DepletedUranium>
-			<CarbonAlloy>3</CarbonAlloy>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -192,9 +190,7 @@
 			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-			<TitaniumBar>4</TitaniumBar>
-			<DepletedUranium>5</DepletedUranium>
-			<CarbonAlloy>3</CarbonAlloy>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -286,9 +282,7 @@
 			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-			<TitaniumBar>4</TitaniumBar>
-			<DepletedUranium>5</DepletedUranium>
-			<CarbonAlloy>3</CarbonAlloy>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -380,9 +374,7 @@
 			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-			<TitaniumBar>4</TitaniumBar>
-			<DepletedUranium>5</DepletedUranium>
-			<CarbonAlloy>3</CarbonAlloy>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
