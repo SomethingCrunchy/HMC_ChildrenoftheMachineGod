@@ -72,20 +72,14 @@
 		</race>
 		<!-- <comps>
 			<li Class="SK.CompProperties_PawnJumper">
-<<<<<<< HEAD
 				<maxCharges>5</maxCharges>
 				<minEnergy>0.15</minEnergy>
 				<ammoCountPerCharge>10</ammoCountPerCharge>
 				<jumpCooldown>360</jumpCooldown>
-=======
-				<maxCharges>5</maxCharges> <!-- Number of possible jumps -->
-<<<<<<< HEAD
-=======
-				<minEnergy>0.15</minEnergy> <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
-				<ammoCountPerCharge>10</ammoCountPerCharge> <!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
->>>>>>> a434a33137f258d936abc7846957d4b11460f524
-				<jumpCooldown>360</jumpCooldown> <!-- Jump cooldown in ticks -->
->>>>>>> 8d8ca0d31e179c50f8e6b3a7a32da8c07ad4d16d
+				<maxCharges>5</maxCharges>
+				<minEnergy>0.15</minEnergy>
+				<ammoCountPerCharge>10</ammoCountPerCharge>
+				<jumpCooldown>360</jumpCooldown>
 				<range>4</range>
 				<chargeNoun>jump</chargeNoun>
 				<hotKey>Misc4</hotKey>
