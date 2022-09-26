@@ -12,7 +12,7 @@
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(500, 0)</li>
-				<li>(10000, 0)</li>
+				<li>(10000, 0.05)</li>
 				<li>(21000, 0.3)</li>
 				<li>(25000, 0.5)</li>
 				<li>(25000, 0.7)</li>
@@ -20,9 +20,9 @@
 		</raidCommonalityFromPointsCurve>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
-				<li>(19000, 925)</li>
-				<li>(21000, 1325)</li>
-				<li>(25000, 1725)</li>
+				<li>(19000, 675)</li>
+				<li>(21000, 1025)</li>
+				<li>(25000, 1200)</li>
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>

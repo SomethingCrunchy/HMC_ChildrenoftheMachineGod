@@ -14,7 +14,7 @@
 		<defName>CotMG_Melee_TierI</defName>
 		<label>Am-hehu</label>
 		<race>CotMG_Melee_TierI</race>
-		<combatPower>900</combatPower>
+		<combatPower>700</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -34,7 +34,7 @@
 		<defName>CotMG_Melee_TierII</defName>
 		<label>Ba-Pef</label>
 		<race>CotMG_Melee_TierII</race>
-		<combatPower>1300</combatPower>
+		<combatPower>1000</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -54,7 +54,7 @@
 		<defName>CotMG_Melee_TierIII</defName>
 		<label>Babi</label>
 		<race>CotMG_Melee_TierIII</race>
-		<combatPower>1700</combatPower>
+		<combatPower>1200</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -76,7 +76,7 @@
 		<defName>CotMG_Gunner_TierI</defName>
 		<label>Up-uatu</label>
 		<race>CotMG_Gunner_TierI</race>
-		<combatPower>900</combatPower>
+		<combatPower>700</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -111,7 +111,7 @@
 		<defName>CotMG_Gunner_TierII</defName>
 		<label>Amset</label>
 		<race>CotMG_Gunner_TierII</race>
-		<combatPower>1300</combatPower>
+		<combatPower>1000</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -146,7 +146,7 @@
 		<defName>CotMG_Sniper_TierII</defName>
 		<label>Seker</label>
 		<race>CotMG_Sniper_TierII</race>
-		<combatPower>1300</combatPower>
+		<combatPower>1000</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -181,7 +181,7 @@
 		<defName>CotMG_Gunner_TierIII</defName>
 		<label>Kem-Ur</label>
 		<race>CotMG_Gunner_TierIII</race>
-		<combatPower>1700</combatPower>
+		<combatPower>1200</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -218,7 +218,7 @@
 		<defName>CotMG_Destroyer_TierI</defName>
 		<label>Duamutef</label>
 		<race>CotMG_Destroyer_TierI</race>
-		<combatPower>900</combatPower>
+		<combatPower>700</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -253,7 +253,7 @@
 		<defName>CotMG_Destroyer_TierII</defName>
 		<label>Aker</label>
 		<race>CotMG_Destroyer_TierII</race>
-		<combatPower>1300</combatPower>
+		<combatPower>1000</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -288,7 +288,7 @@
 		<defName>CotMG_Destroyer_TierIII</defName>
 		<label>Anubis</label>
 		<race>CotMG_Destroyer_TierIII</race>
-		<combatPower>1700</combatPower>
+		<combatPower>1200</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -323,7 +323,7 @@
 		<defName>CotMG_Grenadier_TierIII</defName>
 		<label>Meretseger</label>
 		<race>CotMG_Grenadier_TierIII</race>
-		<combatPower>1700</combatPower>
+		<combatPower>1200</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
