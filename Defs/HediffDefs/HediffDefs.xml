@@ -70,7 +70,7 @@
 				<statOffsets>
 					<Suppressability>0.25</Suppressability>
 					<AimingAccuracy>-0.15</AimingAccuracy>
-					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+					<MentalBreakThreshold>0.1</MentalBreakThreshold>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -89,7 +89,7 @@
 				<statOffsets>
 					<Suppressability>0.3</Suppressability>
 					<AimingAccuracy>-0.2</AimingAccuracy>
-					<MentalBreakThreshold>-0.2</MentalBreakThreshold>
+					<MentalBreakThreshold>0.2</MentalBreakThreshold>
 				</statOffsets>
 				<capMods>
 					<li>
