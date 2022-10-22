@@ -74,6 +74,12 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CotMG_Fear_Plasma</damageDef>
 			<damageAmountBase>15</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>10</amount>
+				</li>
+			</secondaryDamage>
 			<pelletCount>6</pelletCount>
 			<armorPenetrationSharp>12</armorPenetrationSharp>
 			<armorPenetrationBlunt>6</armorPenetrationBlunt>

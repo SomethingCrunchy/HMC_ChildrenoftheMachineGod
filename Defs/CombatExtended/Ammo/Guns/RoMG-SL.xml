@@ -55,6 +55,12 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CotMG_Fear_LaserBurn</damageDef>
 			<damageAmountBase>40</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>12</amount>
+				</li>
+			</secondaryDamage>
 			<armorPenetrationSharp>20</armorPenetrationSharp>
 			<armorPenetrationBlunt>2</armorPenetrationBlunt>
 		</projectile>
