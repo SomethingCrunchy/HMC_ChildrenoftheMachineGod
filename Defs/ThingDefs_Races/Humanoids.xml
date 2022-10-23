@@ -8,7 +8,7 @@
 		<description>Ba-Pef</description>
 		<statBases>
 			<Mass>180</Mass>
-			<MoveSpeed>10.2</MoveSpeed>
+			<MoveSpeed>8.5</MoveSpeed>
 			<ArmorRating_Blunt>45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>20</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -99,7 +99,7 @@
 		<description>Babi</description>
 		<statBases>
 			<Mass>230</Mass>
-			<MoveSpeed>8.3</MoveSpeed>
+			<MoveSpeed>7.5</MoveSpeed>
 			<ArmorRating_Blunt>64</ArmorRating_Blunt>
 			<ArmorRating_Sharp>24</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -190,7 +190,7 @@
 		<description>Amset</description>
 		<statBases>
 			<Mass>240</Mass>
-			<MoveSpeed>7.6</MoveSpeed>
+			<MoveSpeed>7.5</MoveSpeed>
 			<ArmorRating_Blunt>45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>20</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -282,7 +282,7 @@
 		<description>Kem-Ur</description>
 		<statBases>
 			<Mass>310</Mass>
-			<MoveSpeed>5.2</MoveSpeed>
+			<MoveSpeed>6</MoveSpeed>
 			<ArmorRating_Blunt>64</ArmorRating_Blunt>
 			<ArmorRating_Sharp>24</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>

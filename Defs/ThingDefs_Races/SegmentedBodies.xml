@@ -8,7 +8,7 @@
 		<description>Meretseger</description>
 		<statBases>
 			<Mass>260</Mass>
-			<MoveSpeed>9.1</MoveSpeed>
+			<MoveSpeed>7.5</MoveSpeed>
 			<ArmorRating_Blunt>64</ArmorRating_Blunt>
 			<ArmorRating_Sharp>24</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>

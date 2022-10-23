@@ -8,7 +8,7 @@
 		<description>Am-hehu</description>
 		<statBases>
 			<Mass>120</Mass>
-			<MoveSpeed>12.3</MoveSpeed>
+			<MoveSpeed>9.5</MoveSpeed>
 			<ArmorRating_Blunt>28</ArmorRating_Blunt>
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -103,7 +103,7 @@
 		<description>Up-uatu</description>
 		<statBases>
 			<Mass>140</Mass>
-			<MoveSpeed>9.2</MoveSpeed>
+			<MoveSpeed>8</MoveSpeed>
 			<ArmorRating_Blunt>28</ArmorRating_Blunt>
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>

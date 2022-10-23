@@ -8,7 +8,7 @@
 		<description>Seker</description>
 		<statBases>
 			<Mass>400</Mass>
-			<MoveSpeed>6.5</MoveSpeed>
+			<MoveSpeed>6</MoveSpeed>
 			<ArmorRating_Blunt>45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>20</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -100,7 +100,7 @@
 		<description>Duamutef</description>
 		<statBases>
 			<Mass>200</Mass>
-			<MoveSpeed>10.6</MoveSpeed>
+			<MoveSpeed>9</MoveSpeed>
 			<ArmorRating_Blunt>28</ArmorRating_Blunt>
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -206,7 +206,7 @@
 		<description>Anubis</description>
 		<statBases>
 			<Mass>640</Mass>
-			<MoveSpeed>4.1</MoveSpeed>
+			<MoveSpeed>5</MoveSpeed>
 			<ArmorRating_Blunt>64</ArmorRating_Blunt>
 			<ArmorRating_Sharp>24</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -298,7 +298,7 @@
 		<description>Aker</description>
 		<statBases>
 			<Mass>420</Mass>
-			<MoveSpeed>6</MoveSpeed>
+			<MoveSpeed>7</MoveSpeed>
 			<ArmorRating_Blunt>45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>20</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
