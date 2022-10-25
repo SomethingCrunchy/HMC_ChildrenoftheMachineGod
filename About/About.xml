@@ -19,6 +19,12 @@
 			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
 		</li>
 	</modDependencies>
+	<loadBefore>
+		<li>GhostRolly.Rim73</li>
+		<li>experimental.optimizations</li>
+		<li>notooshabby.rocketman</li>
+		<li>Krkr.RocketMan</li>
+	</loadBefore>
 	<loadAfter>
 		<li>skyarkhangel.HSK</li>
 	</loadAfter>
