@@ -241,8 +241,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>8</min>
-					<max>9</max>
+					<min>16</min>
+					<max>18</max>
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
@@ -276,8 +276,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>12</min>
-					<max>14</max>
+					<min>20</min>
+					<max>22</max>
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
@@ -311,8 +311,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>8</min>
-					<max>10</max>
+					<min>26</min>
+					<max>28</max>
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
@@ -346,7 +346,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>6</min>
+					<min>7</min>
 					<max>8</max>
 				</primaryMagazineCount>
 			</li>
