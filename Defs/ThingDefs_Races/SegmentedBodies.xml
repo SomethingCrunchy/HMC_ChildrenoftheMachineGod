@@ -85,6 +85,9 @@
 		</race>
 		<butcherProducts>
 			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Microchips>4</Microchips>
+			<MagneticMaterial>2</MagneticMaterial>
+			<ComponentUltra>2</ComponentUltra>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">

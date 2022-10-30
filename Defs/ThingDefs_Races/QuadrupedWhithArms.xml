@@ -85,6 +85,9 @@
 		</race>
 		<butcherProducts>
 			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Carbon>3</Carbon>
+			<Microchips>3</Microchips>
+			<Plastic>6</Plastic>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -191,6 +194,9 @@
 		</race>
 		<butcherProducts>
 			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Plastic>6</Plastic>
+			<Rubber>6</Rubber>
+			<SyntheticFibers>3</SyntheticFibers>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -283,6 +289,9 @@
 		</race>
 		<butcherProducts>
 			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Microchips>4</Microchips>
+			<MagneticMaterial>2</MagneticMaterial>
+			<ComponentUltra>2</ComponentUltra>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -375,6 +384,9 @@
 		</race>
 		<butcherProducts>
 			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Carbon>3</Carbon>
+			<Microchips>3</Microchips>
+			<Plastic>6</Plastic>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
